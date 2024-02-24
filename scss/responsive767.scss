@@ -1,0 +1,151 @@
+@media (max-width: 767px) {
+  .footer__info {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .footer__right {
+    align-items: flex-start;
+  }
+
+  .footer__info {
+    width: 40%;
+  }
+
+  .service-item__info {
+    padding: 15px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .slider-service .swiper-wrapper {
+    padding: 10px 0 30px;
+  }
+
+  .swiper-pagination-bullets {
+    gap: 10px;
+  }
+
+  .swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+  }
+
+  .caption--h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .caption--h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .objects-section .tabs-links .tabs-link {
+    padding: 12px 31px;
+    font-size: 14px;
+  }
+
+  .object-item__front {
+    padding-top: calc(270 / 426 * 100%);
+  }
+
+  .slider-objects .swiper-pagination {
+    margin-top: 20px;
+  }
+
+  .object-item__back {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 15px;
+  }
+
+  .object-item__name {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .object-item__city {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .documents-section {
+    .swiper-pagination {
+      margin-top: 20px;
+    }
+  }
+
+  .slider-docs {
+    margin-top: 20px;
+  }
+
+  .scheme-list {
+    margin-top: 20px;
+  }
+
+  .our-advantages__list {
+    gap: 15px;
+  }
+
+  .caption--h4 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .slider-reviews .swiper-pagination {
+    margin-top: 20px;
+  }
+
+  .reviews-other {
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .reviews-other__txt {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .reviews-other ul {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .slider-partners .swiper-pagination {
+    margin-top: 20px;
+  }
+
+  .article-section__head .btn {
+    gap: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .article-list {
+    gap: 20px 10px;
+  }
+
+  .btn {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .article-item__picture + * {
+    margin-top: 10px;
+  }
+
+  .article-item__picture {
+    padding: 15px;
+  }
+
+  .article-controls {
+    margin-top: 20px;
+  }
+
+  .contacts {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

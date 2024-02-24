@@ -1,0 +1,162 @@
+@media (max-width: 1439px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .header__top .logo {
+    margin-left: 38px;
+  }
+
+  .header-top__info {
+    gap: 40px;
+  }
+
+  .header__bottom .menu {
+    width: 80%;
+  }
+
+  .header__bottom .search-block {
+    width: 20%;
+  }
+
+  .header .logo {
+    width: 190px;
+  }
+
+  .menu {
+    padding: 0 25px;
+  }
+
+  .footer {
+    padding: 60px 0;
+  }
+
+  .footer__left {
+    width: 190px;
+  }
+
+  .copy-right {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 20px;
+  }
+
+  .footer__right {
+    width: calc(70% + 126px);
+  }
+
+  .footer-menu__col:nth-child(1) {
+    width: 70%;
+  }
+
+  .footer-menu {
+    margin-top: 30px;
+  }
+
+  .footer-menu__sub {
+    gap: 25px 0;
+  }
+
+  .footer__bottom {
+    margin-top: 50px;
+  }
+
+  .swiper-button-prev {
+    left: 0 !important;
+  }
+  .swiper-button-next {
+    right: 0px !important;
+  }
+
+  .slider-service {
+    padding: 0 70px;
+  }
+
+  .service-item .picture {
+  }
+
+  .service-item__info {
+    padding: 20px;
+  }
+
+  .slider-objects {
+    padding: 0 70px;
+  }
+
+  .squeeze .picture {
+    transform: translate(-110%, -10px);
+    width: 620px;
+    height: 480px;
+  }
+
+  .squeeze-section {
+    padding: 80px 0;
+  }
+
+  .about-block__right {
+    max-width: 550px;
+  }
+
+  .advantages__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .advantages {
+    gap: 15px 0;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .about-block {
+    font-size: 14px;
+  }
+
+  .scheme-item .arrow svg {
+    width: 25px;
+  }
+
+  .scheme-section {
+    padding: 50px 0;
+  }
+
+  .scheme-item {
+    padding: 0 15px;
+  }
+
+  .scheme-item .circle {
+    width: 28px;
+    height: 28px;
+  }
+
+  .caption--h3 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .scheme-list {
+    gap: 25px 65px;
+  }
+
+  .scheme-item {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .scheme-list {
+    margin-top: 40px;
+  }
+
+  .our-advantages__item {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .reviews-other ul {
+    width: calc(100% - 300px - 40px);
+  }
+
+  .contacts__map {
+    height: 370px;
+  }
+}

@@ -1,0 +1,158 @@
+@media (max-width: 479px) {
+  .squeeze {
+    .input-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .input-item {
+        width: 100%;
+      }
+
+      .btn {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .input-item {
+    width: 100%;
+
+    input {
+      height: 50px;
+    }
+  }
+
+  .squeeze__content {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .squeeze {
+    padding-right: 0;
+  }
+
+  .squeeze .input-list .btn {
+    height: 50px;
+  }
+
+  .squeeze-section {
+    background-size: 60%;
+  }
+
+  .advantages li {
+    width: 100%;
+    gap: 5px;
+  }
+
+  .advantages__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .advantages__text {
+    min-height: initial;
+  }
+
+  .advantages {
+    gap: 30px;
+  }
+
+  .about-block__left .advantages {
+    margin-top: 0;
+  }
+
+  .docs-block {
+    padding: 10px;
+  }
+
+  .docs-block__info {
+    gap: 5px;
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .scheme-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .scheme-item {
+    height: auto;
+    min-height: 150px;
+  }
+
+  .scheme-item {
+    &.step1,
+    &.step2 {
+      .arrow {
+        left: 50px;
+        top: calc(100% + 12px);
+        transform: rotate(90deg) translateY(0%);
+        right: auto;
+        bottom: auto;
+      }
+    }
+    &.step3,
+    &.step4,
+    &.step5 {
+      .arrow {
+        left: 50px;
+        top: calc(100% + 12px);
+        transform: rotate(-90deg) translateY(0%);
+        right: auto;
+        bottom: auto;
+      }
+    }
+  }
+
+  .our-advantages__list {
+    gap: 15px;
+    grid-template-columns: 1fr;
+  }
+
+  .reviews-block__content {
+    width: 100%;
+    padding: 0;
+  }
+
+  .review-block {
+    padding: 15px;
+    flex-wrap: wrap;
+  }
+
+  .review-block__docs {
+    margin: 15px auto 0;
+  }
+
+  .reviews-other ul {
+  }
+
+  .reviews-other__num {
+    display: none;
+  }
+
+  .slider-partners .picture {
+    height: 55px;
+  }
+
+  .article-section__head {
+    gap: 10px;
+    .caption {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .contacts-check label {
+    padding: 10px 10px 10px 60px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .contacts__map {
+    height: 280px;
+  }
+}
