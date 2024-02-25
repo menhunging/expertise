@@ -222,4 +222,73 @@
   .contacts__col {
     width: 100%;
   }
+
+  .about-block__center .advantages {
+    li {
+      width: 50%;
+    }
+  }
+
+  .requisites-content {
+    height: auto;
+  }
+
+  .requisites-content__right,
+  .requisites-content__left {
+    width: 100%;
+  }
+
+  .requisites-content ul + ul {
+    margin-top: 30px;
+  }
+
+  .requisites-content {
+    margin-top: 20px;
+  }
+
+  .requisites-content__right,
+  .requisites-content__left {
+    padding: 30px 15px;
+  }
+
+  .squeeze-section {
+    margin-top: 0;
+  }
+
+  .service-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .back-section__content {
+    flex-wrap: wrap;
+    align-items: flex-end;
+    align-content: flex-end;
+    gap: 20px;
+  }
+
+  .back-section__right,
+  .back-section__left {
+    width: 100%;
+  }
+
+  .back-section__right {
+    max-width: 480px;
+  }
+
+  .list-section .link-more {
+    margin-top: 20px;
+  }
+
+  .table-section__body {
+    width: 100%;
+    overflow: auto;
+
+    .table {
+      width: 1200px;
+    }
+  }
+
+  .table-section__body {
+    margin-top: 20px;
+  }
 }

@@ -148,4 +148,27 @@
     font-size: 14px;
     line-height: 20px;
   }
+
+  .back-section__content .btn {
+    width: 175px;
+  }
+
+  .back-section__left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .list-block {
+    grid-template-columns: 1fr;
+  }
+
+  .text-simple {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .faq-item {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }

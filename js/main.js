@@ -6,6 +6,8 @@ $(document).ready(function () {
   if ($(".burger").length > 0) {
     $(".burger").on("click", function () {
       $(this).toggleClass("opened");
+      $("body").toggleClass("hidden");
+      $(".menu-invis").stop().slideToggle();
     });
   }
 
@@ -248,6 +250,7 @@ $(document).ready(function () {
       slidesPerView: 2,
       spaceBetween: 20,
       autoHeight: true,
+      loop: true,
       watchSlidesProgress: true,
       navigation: {
         nextEl: ".swiper-button-next",
@@ -308,6 +311,62 @@ $(document).ready(function () {
           slidesPerGroup: 7,
         },
       },
+    });
+  }
+
+  if ($(".slider-team").length > 0) {
+    const swiper = new Swiper(".slider-team", {
+      slidesPerView: 4,
+      slidesPerGroup: 4,
+      spaceBetween: 20,
+      autoHeight: true,
+      loop: true,
+      watchSlidesProgress: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          slidesPerGroup: 1,
+        },
+        640: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+          spaceBetween: 20,
+        },
+        1200: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+          spaceBetween: 20,
+        },
+        1440: {
+          slidesPerView: 4,
+          slidesPerGroup: 4,
+          spaceBetween: 20,
+        },
+      },
+    });
+  }
+
+  if ($(".faq-item").length > 0) {
+    $(".faq-item__quest").on("click", function () {
+      $(this).parents(".faq-item").toggleClass("opened");
+      $(this)
+        .parents(".faq-item")
+        .find(".faq-item__content")
+        .stop()
+        .slideToggle();
     });
   }
 });

@@ -155,4 +155,46 @@
   .contacts__map {
     height: 280px;
   }
+
+  .requisites-content__left.main-info li {
+    width: 100%;
+  }
+
+  .requisites-content ul {
+    gap: 10px;
+  }
+
+  .requisites-section .title {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 5px;
+  }
+
+  .requisites-content {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .requisites-content ul {
+    margin-top: 20px;
+  }
+
+  .service-list {
+    grid-template-columns: 1fr;
+  }
+
+  .back-section__content .title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .back-section__content .btn {
+    position: relative;
+    right: auto;
+    left: auto;
+    height: auto;
+    width: 100%;
+    margin-top: 15px;
+    height: 50px;
+  }
 }

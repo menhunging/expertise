@@ -689,6 +689,7 @@ picture {
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 10;
 
   &__line {
     display: block;
@@ -700,6 +701,8 @@ picture {
 
   &.opened {
     .burger__line {
+      background-color: $colorWhite;
+
       &:nth-child(1) {
         transform-origin: left;
         transform: rotate(45deg) translate(3px, -5px);
