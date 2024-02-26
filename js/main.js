@@ -41,37 +41,6 @@ $(document).ready(function () {
     });
   }
 
-  // if ($(".text-section__slider").length > 0) {
-  //   const sliders = document.querySelectorAll(".text-section__slider");
-
-  //   let mySwipers = [];
-
-  //   function sliderinit() {
-  //     sliders.forEach((slider, index) => {
-  //       if (!slider.swiper) {
-  //         mySwipers[index] = new Swiper(slider, {
-  //           slidesPerView: 1,
-  //           navigation: {
-  //             nextEl: ".swiper-button-next",
-  //             prevEl: ".swiper-button-prev",
-  //           },
-  //           pagination: {
-  //             el: ".swiper-pagination",
-  //             clickable: true,
-  //           },
-  //           on: {
-  //             init: function (swiper) {},
-  //           },
-  //         });
-  //       } else {
-  //         return;
-  //       }
-  //     });
-  //   }
-
-  //   sliders.length && sliderinit();
-  // }
-
   if ($(".modal").length > 0) {
     MicroModal.init({
       openTrigger: "data-modal",
@@ -359,6 +328,135 @@ $(document).ready(function () {
     });
   }
 
+  if ($(".slider-images").length > 0) {
+    const sliders = document.querySelectorAll(".slider-images");
+
+    let mySwipers = [];
+
+    function sliderinit() {
+      sliders.forEach((slider, index) => {
+        if (!slider.swiper) {
+          mySwipers[index] = new Swiper(slider, {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            watchSlidesProgress: true,
+            grid: {
+              rows: 2,
+              fill: "row",
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            breakpoints: {
+              0: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                grid: {
+                  rows: 1,
+                  fill: "row",
+                },
+              },
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                grid: {
+                  rows: 2,
+                  fill: "row",
+                },
+              },
+              1200: {
+                slidesPerView: 3,
+                spaceBetween: 19,
+                grid: {
+                  rows: 2,
+                  fill: "row",
+                },
+              },
+              1620: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                grid: {
+                  rows: 2,
+                  fill: "row",
+                },
+              },
+            },
+            on: {
+              init: function (swiper) {},
+            },
+          });
+        } else {
+          return;
+        }
+      });
+    }
+
+    sliders.length && sliderinit();
+  }
+
+  if ($(".slider-images-full").length > 0) {
+    const sliders = document.querySelectorAll(".slider-images-full");
+
+    let mySwipers = [];
+
+    function sliderinit() {
+      sliders.forEach((slider, index) => {
+        if (!slider.swiper) {
+          mySwipers[index] = new Swiper(slider, {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            watchSlidesProgress: true,
+
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            breakpoints: {
+              0: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              1200: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+            },
+            on: {
+              init: function (swiper) {},
+            },
+          });
+        } else {
+          return;
+        }
+      });
+    }
+
+    sliders.length && sliderinit();
+  }
+
+  if ($(".selectric").length > 0) {
+    $(".selectric").map(function () {
+      $(this).selectric({
+        onOpen: function (element) {},
+        onChange: function (element) {},
+        onClose: function (element) {},
+      });
+    });
+  }
+
   if ($(".faq-item").length > 0) {
     $(".faq-item__quest").on("click", function () {
       $(this).parents(".faq-item").toggleClass("opened");
@@ -367,6 +465,109 @@ $(document).ready(function () {
         .find(".faq-item__content")
         .stop()
         .slideToggle();
+    });
+  }
+
+  if ($(".slider-other-article").length > 0) {
+    const swiper = new Swiper(".slider-other-article", {
+      slidesPerView: 4,
+      slidesPerGroup: 4,
+      spaceBetween: 20,
+      autoHeight: true,
+      loop: true,
+      watchSlidesProgress: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          slidesPerGroup: 1,
+        },
+        640: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+          spaceBetween: 20,
+        },
+        1200: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+          spaceBetween: 20,
+        },
+        1440: {
+          slidesPerView: 4,
+          slidesPerGroup: 4,
+          spaceBetween: 20,
+        },
+      },
+    });
+  }
+
+  if ($(".slider-team-small").length > 0) {
+    const swiper = new Swiper(".slider-team-small", {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 20,
+      autoHeight: true,
+      loop: true,
+      watchSlidesProgress: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          slidesPerGroup: 1,
+        },
+        640: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+          spaceBetween: 20,
+        },
+        1200: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+          spaceBetween: 20,
+        },
+      },
+    });
+  }
+
+  if ($(".slider-grettings").length > 0) {
+    const swiper = new Swiper(".slider-grettings", {
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 30,
+      // loop: true,
+      // watchSlidesProgress: true,
+      navigation: {
+        nextEl: ".grettings-section__content .swiper-button-next",
+        prevEl: ".grettings-section__content .swiper-button-prev",
+      },
+      pagination: {
+        el: ".grettings-section__content .swiper-pagination",
+        clickable: true,
+      },
     });
   }
 });

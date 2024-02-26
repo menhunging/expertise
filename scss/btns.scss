@@ -96,3 +96,35 @@
     transition: all 0.3s;
   }
 }
+
+.link-back {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  color: $colorBlue;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+
+  &:hover {
+    svg {
+      background-color: $colorBlue;
+
+      path {
+        fill: $colorWhite;
+      }
+    }
+  }
+
+  svg {
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    color: $colorBlue;
+    border: solid 1px $colorBlue;
+    padding: 6px;
+    transition: all 0.3s;
+  }
+}

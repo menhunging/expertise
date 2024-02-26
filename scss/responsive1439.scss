@@ -93,6 +93,18 @@
     padding: 80px 0;
   }
 
+  .squeeze {
+    overflow: hidden;
+    &--left {
+      .picture {
+        width: 681px;
+        height: 802px;
+        transform: initial;
+        top: -86px;
+      }
+    }
+  }
+
   .about-block__right {
     max-width: 550px;
   }
@@ -158,5 +170,15 @@
 
   .contacts__map {
     height: 370px;
+  }
+
+  .article-page {
+    .about-block__left {
+      max-width: 500px;
+    }
+
+    .about-block__right {
+      width: calc(100% - 540px);
+    }
   }
 }

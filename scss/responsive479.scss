@@ -197,4 +197,21 @@
     margin-top: 15px;
     height: 50px;
   }
+
+  .docs-list {
+    grid-template-columns: 1fr;
+  }
+
+  .object-list {
+    grid-template-columns: 1fr;
+  }
+
+  .popup-section {
+    padding: 40px 15px;
+  }
+
+  .popup-success {
+    padding: 20px;
+    height: 400px;
+  }
 }

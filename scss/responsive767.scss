@@ -171,4 +171,47 @@
     font-size: 14px;
     line-height: 18px;
   }
+
+  .slider-images {
+    .swiper-pagination {
+      margin-top: 20px;
+    }
+  }
+
+  .breadcrumbs__list {
+    gap: 10px 26px;
+  }
+
+  .error-text {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .error-block {
+    font-size: 14px;
+    line-height: 18px;
+
+    .picture {
+      width: 250px;
+      margin: 0 auto;
+    }
+  }
+
+  .popup-teams__body {
+    padding: 20px;
+  }
+
+  .popup-teams__content {
+    width: 100%;
+  }
+
+  .popup-teams__media {
+    margin: 0 auto;
+  }
+
+  .popup-teams__head {
+    font-size: 20px;
+    list-style: 30px;
+    padding: 15px 30px;
+  }
 }

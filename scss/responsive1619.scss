@@ -7,12 +7,18 @@
     width: 70%;
   }
 
-  .squeeze {
-    padding-right: 0;
-  }
-
   .squeeze .picture {
     transform: translate(-95%, -130px);
+  }
+
+  .squeeze {
+    padding-right: 0;
+
+    &--left {
+      .picture {
+        transform: initial;
+      }
+    }
   }
 
   .about-block__right {

@@ -291,4 +291,31 @@
   .table-section__body {
     margin-top: 20px;
   }
+
+  .docs-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .object-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .review-list {
+    grid-template-columns: 1fr;
+  }
+
+  .slider-images-full .swiper-pagination {
+    margin-top: 20px;
+  }
+
+  .article-page {
+    .about-block__left {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .about-block__right {
+      width: 100%;
+    }
+  }
 }

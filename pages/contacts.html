@@ -4,49 +4,25 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no, viewport-fit=cover" />
-    <title>Все модальные окна</title>
+    <title>Контакты</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../../img/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" type="text/css" href="../../fonts/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="../fonts/stylesheet.css" />
 
-    <link rel="stylesheet" type="text/css" href="../../libs/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../libs/selectric/selectric.css" />
-    <link rel="stylesheet" type="text/css" href="../../libs/micromodal/micromodal.css" />
-    <link rel="stylesheet" type="text/css" href="../../libs/fancybox/fancybox.css" />
-    <link rel="stylesheet" type="text/css" href="../../libs/jquery-ui/jquery-ui.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../libs/range/ion.rangeSlider.min.css" />
+    <link rel="stylesheet" type="text/css" href="../libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="../libs/selectric/selectric.css" />
+    <link rel="stylesheet" type="text/css" href="../libs/micromodal/micromodal.css" />
+    <link rel="stylesheet" type="text/css" href="../libs/fancybox/fancybox.css" />
+    <link rel="stylesheet" type="text/css" href="../libs/jquery-ui/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../libs/range/ion.rangeSlider.min.css" />
 
-    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
-
-    <style>
-        .test-modals {
-            padding: 50px 0;
-        }
-
-        .test-modals a {
-            display: table;
-            text-decoration: underline;
-        }
-
-        .test-modals h1 {
-            margin-bottom: 50px;
-        }
-
-        .test-modals a+a {
-            margin-top: 10px;
-        }
-
-        .test-modals a:hover {
-            text-decoration-color: transparent;
-        }
-    </style>
-
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
 </head>
 
 <body>
@@ -214,19 +190,79 @@
                 </div>
             </div>
         </header>
+
         <main class="main">
-
-            <section class="test-modals">
+            <section class="breadcrumbs">
                 <div class="container">
-                    <h1 class="caption">Тестовые ссылки для открытия модалок:</h1>
-
-                    <a href="#" data-modal="modal-call">Заявка на звонок</a>
-                    <a href="#" data-modal="modal-success">Cпасибо!</a>
-                    <a href="#" data-modal="modal-teams">Сотрудники</a>
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__link">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link">Контакты</span>
+                        </li>
+                    </ul>
                 </div>
             </section>
 
+            <section class="contacts">
+                <div class="container">
+                    <div class="contacts__content">
+                        <h2 class="caption caption--h2">контакты</h2>
+                        <div class="contacts-controls">
+                            <div class="contacts-check">
+                                <input type="radio" id="cn1" name="maps" checked>
+                                <label for="cn1">г. Москва (гл. подразделение)</label>
+                            </div>
+                            <div class="contacts-check">
+                                <input type="radio" id="cn2" name="maps">
+                                <label for="cn2">г. Москва (лаборатория)</label>
+                            </div>
+                        </div>
+                        <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от
+                            всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький
+                            ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. </p>
+                        <div class="contacts__row">
+                            <div class="contacts__col">
+                                <span class="caption caption--h3">гОЛОВНОе ПОДРАЗДЕЛЕНИе</span>
+                                <ul class="contacts__info">
+                                    <li>
+                                        <span class="title">адрес:</span>
+                                        <p>г. Москва, Горбунова, д.12, кор.2, этаж 4</p>
+                                    </li>
+                                    <li>
+                                        <span class="title">телефон:</span>
+                                        <a href="tel:+74951182315">+7 (495) 118-23-15</a>
+                                    </li>
+                                    <li>
+                                        <span class="title">испытательная лаборатория:</span>
+                                        <a href="tel:+79672181113">+7 967 218-11-13</a>
+                                    </li>
+                                    <li>
+                                        <span class="title">адрес:</span>
+                                        <a href="mailto:info@stroy-ekspertiza.com">info@stroy-ekspertiza.com</a>
+                                    </li>
+                                </ul>
+                                <ul class="social">
+                                    <li>
+                                        <a href="#" class="icon-custom icon-custom--whatsapp"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="icon-custom icon-custom--telegram"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="contacts__col contacts__map">
+                                <iframe
+                                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A6a4aaca0d0b3cd8765bbe490754ac399c8ffaede93cef18d590c6df20e01573a&amp;source=constructor"
+                                    width="100%" height="100%" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
+
         <footer class="footer">
             <div class="container">
                 <div class="footer__row">
@@ -326,214 +362,16 @@
         </footer>
     </div>
 
-    <div class="micromodal-slide modal" id="modal-call" aria-hidden="true">
-        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-            <div class="modal__container" role="dialog" aria-modal="true">
-                <div class="modal__inner">
-                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
-
-                        <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M6.608 9L4.72 6.36L2.768 9H0.048L3.36 4.664L0.16 0.391999H2.96L4.784 2.904L6.656 0.391999H9.312L6.112 4.6L9.44 9H6.608Z"
-                                fill="#FF6F5E" />
-                        </svg>
-
-
-                    </button>
-                    <div class="modal__content" autocomplete="off">
-                        <div class="popup-section">
-                            <h2 class="caption caption--h2">заявка на звонок</h2>
-                            <p>Если вы хотите получить консультацию или заказать наши услуги - заполните заявку, наш
-                                специалист свяжется с вами</p>
-                            <div class="input-item">
-                                <input type="text" placeholder="Ваше имя">
-                            </div>
-                            <div class="input-item">
-                                <input type="text" placeholder="Ваш телефон" class="phone-input">
-                            </div>
-                            <div class="input-item">
-                                <input type="text" placeholder="Ваш город">
-                            </div>
-
-                            <div class="check-block">
-                                <input type="checkbox" id="personal">
-                                <label for="personal">Даю согласие на обработку моих
-                                    персональных данных</label>
-                            </div>
-
-                            <button class="btn btn--site">ОТПРАВИТЬ</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="micromodal-slide modal" id="modal-success" aria-hidden="true">
-        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-            <div class="modal__container" role="dialog" aria-modal="true">
-                <div class="modal__inner">
-                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
-
-                        <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M6.608 9L4.72 6.36L2.768 9H0.048L3.36 4.664L0.16 0.391999H2.96L4.784 2.904L6.656 0.391999H9.312L6.112 4.6L9.44 9H6.608Z"
-                                fill="#FF6F5E" />
-                        </svg>
-
-
-                    </button>
-                    <div class="modal__content" autocomplete="off">
-                        <div class="popup-success">
-                            <h2 class="caption caption--h2">спасибо!</h2>
-                            <p>Ваша заявка отправлена. В ближайшее
-                                время ожидайте звонка!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="micromodal-slide modal" id="modal-teams" aria-hidden="true">
-        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-            <div class="modal__container" role="dialog" aria-modal="true">
-                <div class="modal__inner">
-                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
-
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M0.27 16L7.11 7.12L7.08 8.59L0.57 0.0999991H3.78L8.76 6.64H7.53L12.51 0.0999991H15.66L9.06 8.65L9.09 7.12L15.99 16H12.72L7.47 9.04L8.64 9.22L3.48 16H0.27Z"
-                                fill="#FF6F5E" />
-                        </svg>
-
-                    </button>
-                    <div class="modal__content" autocomplete="off">
-                        <div class="popup-teams">
-                            <div class="popup-teams__head">
-                                <span>титова эльвира</span>
-                            </div>
-                            <div class="popup-teams__body">
-                                <div class="popup-teams__media">
-                                    <picture class="picture">
-                                        <img src="../img/pic-team1.png" alt="" />
-                                    </picture>
-                                </div>
-                                <div class="popup-teams__content">
-                                    <ul>
-                                        <li>
-                                            <span class="title">Должность</span>
-                                            <p>Техник-лаборант</p>
-                                        </li>
-                                        <li>
-                                            <span class="title">Стаж работы</span>
-                                            <p>32 года</p>
-                                        </li>
-                                        <li>
-                                            <span class="title">Образование</span>
-                                            <p>Высшее</p>
-                                        </li>
-                                    </ul>
-                                    <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
-                                        тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого
-                                        языкового океана. Далеко-далеко за словесными горами в стране гласных и
-                                        согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на
-                                        берегу Семантика большого языкового океана.</p>
-
-                                    <div class="slider-team-small">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <picture class="picture">
-                                                    <a href="../img/doc1.jpg" data-fancybox="documents"></a>
-                                                    <img src="../img/doc1.jpg" alt="" />
-                                                </picture>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <picture class="picture">
-                                                    <a href="../img/doc1.jpg" data-fancybox="documents"></a>
-                                                    <img src="../img/doc1.jpg" alt="" />
-                                                </picture>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <picture class="picture">
-                                                    <a href="../img/doc1.jpg" data-fancybox="documents"></a>
-                                                    <img src="../img/doc1.jpg" alt="" />
-                                                </picture>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <picture class="picture">
-                                                    <a href="../img/doc1.jpg" data-fancybox="documents"></a>
-                                                    <img src="../img/doc1.jpg" alt="" />
-                                                </picture>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <picture class="picture">
-                                                    <a href="../img/doc1.jpg" data-fancybox="documents"></a>
-                                                    <img src="../img/doc1.jpg" alt="" />
-                                                </picture>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <picture class="picture">
-                                                    <a href="../img/doc1.jpg" data-fancybox="documents"></a>
-                                                    <img src="../img/doc1.jpg" alt="" />
-                                                </picture>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <picture class="picture">
-                                                    <a href="../img/doc1.jpg" data-fancybox="documents"></a>
-                                                    <img src="../img/doc1.jpg" alt="" />
-                                                </picture>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <picture class="picture">
-                                                    <a href="../img/doc1.jpg" data-fancybox="documents"></a>
-                                                    <img src="../img/doc1.jpg" alt="" />
-                                                </picture>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <picture class="picture">
-                                                    <a href="../img/doc1.jpg" data-fancybox="documents"></a>
-                                                    <img src="../img/doc1.jpg" alt="" />
-                                                </picture>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-pagination"></div>
-                                        <button class="swiper-button-prev">
-                                            <svg width="17" height="8" viewBox="0 0 17 8" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M0.887995 4.35355C0.692734 4.15829 0.692734 3.84171 0.887995 3.64645L4.06998 0.464467C4.26524 0.269205 4.58182 0.269205 4.77708 0.464467C4.97234 0.659729 4.97234 0.976312 4.77708 1.17157L1.94866 4L4.77708 6.82843C4.97234 7.02369 4.97234 7.34027 4.77708 7.53553C4.58182 7.7308 4.26524 7.7308 4.06998 7.53554L0.887995 4.35355ZM16.7588 4.5L1.24155 4.5L1.24155 3.5L16.7588 3.5L16.7588 4.5Z"
-                                                    fill="white" />
-                                            </svg>
-                                        </button>
-                                        <button class="swiper-button-next">
-                                            <svg width="17" height="8" viewBox="0 0 17 8" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M16.112 4.35355C16.3073 4.15829 16.3073 3.84171 16.112 3.64645L12.93 0.464467C12.7348 0.269205 12.4182 0.269205 12.2229 0.464467C12.0277 0.659729 12.0277 0.976312 12.2229 1.17157L15.0513 4L12.2229 6.82843C12.0277 7.02369 12.0277 7.34027 12.2229 7.53553C12.4182 7.7308 12.7348 7.7308 12.93 7.53554L16.112 4.35355ZM0.241211 4.5L15.7585 4.5L15.7585 3.5L0.241211 3.5L0.241211 4.5Z"
-                                                    fill="white" />
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="../../libs/jquery/jquery-3.7.0.min.js"></script>
-    <script src="../../libs/swiper/swiper-bundle.min.js"></script>
-    <script src="../../libs/selectric/jquery.selectric.min.js"></script>
-    <script src="../../libs/micromodal/micromodal.min.js"></script>
-    <script src="../../libs/tabslet/jquery.tabslet.min.js"></script>
-    <script src="../../libs/fancybox/fancybox.umd.js"></script>
-    <script src="../../libs/inputmask/jquery.inputmask.min.js"></script>
-    <script src="../../libs/jquery-ui/jquery-ui.min.js"></script>
-    <script src="../../libs/range/ion.rangeSlider.min.js"></script>
-    <script src="../../js/main.js"></script>
+    <script src="../libs/jquery/jquery-3.7.0.min.js"></script>
+    <script src="../libs/swiper/swiper-bundle.min.js"></script>
+    <script src="../libs/selectric/jquery.selectric.min.js"></script>
+    <script src="../libs/micromodal/micromodal.min.js"></script>
+    <script src="../libs/tabslet/jquery.tabslet.min.js"></script>
+    <script src="../libs/fancybox/fancybox.umd.js"></script>
+    <script src="../libs/inputmask/jquery.inputmask.min.js"></script>
+    <script src="../libs/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../libs/range/ion.rangeSlider.min.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
