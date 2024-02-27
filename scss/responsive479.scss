@@ -214,4 +214,24 @@
     padding: 20px;
     height: 400px;
   }
+
+  .slider-grettings__content {
+    gap: 10px;
+  }
+
+  .slider-grettings__content .caption {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .slider-grettings__content p {
+    max-width: 100%;
+  }
+
+  .slider-grettings__content .link-more {
+    gap: 5px;
+    position: relative;
+    bottom: auto;
+    right: auto;
+  }
 }

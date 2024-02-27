@@ -81,7 +81,6 @@
   }
 
   .article-list {
-    grid-template-columns: 1fr;
   }
 
   .review-list {
@@ -90,5 +89,33 @@
 
   .team-block__media .picture {
     height: 290px;
+  }
+
+  .article-item {
+    font-size: 12px;
+    line-height: 16px;
+
+    .link-more {
+      position: relative;
+      svg {
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+      }
+    }
+  }
+
+  .article-item__picture .link {
+    font-size: 12px;
+    line-height: 16px;
+    max-width: 100%;
+  }
+
+  .article-item__picture {
+    height: 200px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 10px;
   }
 }

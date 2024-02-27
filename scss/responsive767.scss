@@ -214,4 +214,28 @@
     list-style: 30px;
     padding: 15px 30px;
   }
+
+  .contacts__col > .caption--h3,
+  .squeeze__content > .caption--h2,
+  .about-block__left > .caption--h2,
+  .contacts .contacts__content > .caption--h2,
+  section .container > .caption--h2 {
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+
+  .article-section__head {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-menu__sub {
+    display: none;
+  }
+
+  .objects-section .tabs-links {
+    justify-content: center;
+  }
 }
