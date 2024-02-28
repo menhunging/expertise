@@ -571,7 +571,7 @@ $(document).ready(function () {
       spaceBetween: 20,
       initialSlide: 1,
       speed: 700,
-      // loop: true,
+      loop: true,
       watchSlidesProgress: true,
       navigation: {
         nextEl: ".grettings-section__content .swiper-button-next",

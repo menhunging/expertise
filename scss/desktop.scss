@@ -2381,3 +2381,12 @@
     transition: opacity 0.5s;
   }
 }
+
+.accredit-section {
+  width: 100%;
+  overflow: hidden;
+
+  .swiper-pagination {
+    margin-top: 40px;
+  }
+}
