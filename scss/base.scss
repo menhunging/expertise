@@ -599,6 +599,7 @@ picture {
   border-radius: 50%;
   transform: translateY(calc(-50% - 25px));
   transition: background-color 0.3s;
+  z-index: 1;
 
   &.swiper-button-disabled {
     opacity: 0.33 !important;

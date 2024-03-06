@@ -998,6 +998,10 @@
 
   .icon-custom {
   }
+
+  .tabs-body {
+    width: 100%;
+  }
 }
 
 .contacts__content {
@@ -1020,18 +1024,14 @@
   line-height: 26px;
   letter-spacing: 0.05em;
 
-  input {
-    display: none;
-
-    &:checked {
-      & + label {
-        color: #fff;
-        background-color: $colorBlue;
-      }
+  &.active {
+    .contacts-check__link {
+      color: #fff;
+      background-color: $colorBlue;
     }
   }
 
-  label {
+  .contacts-check__link {
     position: relative;
     cursor: pointer;
     color: rgba(113, 122, 139, 1);
@@ -1059,6 +1059,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
+  margin-top: 30px;
 }
 
 .contacts__col {

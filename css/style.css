@@ -796,6 +796,7 @@ picture {
   border-radius: 50%;
   transform: translateY(calc(-50% - 25px));
   transition: background-color 0.3s;
+  z-index: 1;
 }
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
@@ -2491,6 +2492,10 @@ h4 {
 .contacts .social .icon-custom--whatsapp {
   background-image: url(../img/svg/ic-whatsapp-color-site.svg);
 }
+.contacts .tabs-body {
+  width: 100%;
+}
+
 .contacts__content {
   display: flex;
   flex-wrap: wrap;
@@ -2511,14 +2516,11 @@ h4 {
   line-height: 26px;
   letter-spacing: 0.05em;
 }
-.contacts-check input {
-  display: none;
-}
-.contacts-check input:checked + label {
+.contacts-check.active .contacts-check__link {
   color: #fff;
   background-color: rgb(44, 61, 99);
 }
-.contacts-check label {
+.contacts-check .contacts-check__link {
   position: relative;
   cursor: pointer;
   color: rgb(113, 122, 139);
@@ -2529,7 +2531,7 @@ h4 {
   transition: all 0.3s;
   padding-left: 70px;
 }
-.contacts-check label::before {
+.contacts-check .contacts-check__link::before {
   content: "";
   position: absolute;
   -webkit-transition: all 0.3s;
@@ -2550,6 +2552,7 @@ h4 {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
+  margin-top: 30px;
 }
 
 .contacts__info {
@@ -4445,9 +4448,6 @@ h4 {
   .article-list {
     grid-template-columns: 1fr 1fr;
   }
-  .contacts-controls {
-    order: 3;
-  }
   .contacts__row {
     order: 4;
   }
@@ -4995,13 +4995,18 @@ h4 {
     width: 100%;
     max-width: 100%;
   }
-  .contacts-check label {
-    padding: 10px 10px 10px 60px;
-    font-size: 14px;
-    line-height: 20px;
+  .contacts-check .contacts-check__link {
+    padding: 10px 10px 10px 50px;
+    font-size: 12px;
+    line-height: 18px;
   }
   .contacts__map {
     height: 280px;
+  }
+  .contacts-check .contacts-check__link::before {
+    width: 25px;
+    height: 25px;
+    left: 10px;
   }
   .requisites-content__left.main-info li {
     width: 100%;

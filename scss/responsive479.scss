@@ -146,14 +146,20 @@
     }
   }
 
-  .contacts-check label {
-    padding: 10px 10px 10px 60px;
-    font-size: 14px;
-    line-height: 20px;
+  .contacts-check .contacts-check__link {
+    padding: 10px 10px 10px 50px;
+    font-size: 12px;
+    line-height: 18px;
   }
 
   .contacts__map {
     height: 280px;
+  }
+
+  .contacts-check .contacts-check__link::before{
+    width: 25px;
+    height: 25px;
+    left:10px;
   }
 
   .requisites-content__left.main-info li {
